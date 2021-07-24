@@ -50,7 +50,7 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <button class="btn btn-success float-right">New Student</button>
+                            <button class="btn btn-success btn-sm float-right" type="button" data-toggle="modal" data-target="#exampleModal">New Student</button>
                             <h6 class="m-0 font-weight-bold text-primary">Students</h6>
                         </div>
                         <div class="card-body">
@@ -78,8 +78,9 @@
                                             <td>System Architect</td>
                                             <td>Edinburgh</td>
                                             <td>
-                                                <button class="btn btn-info"><i class="fas fa-cog"></i></button>
-                                                <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                                                <button class="btn btn-info btn-sm"><i class="fas fa-cog"></i></button>
+                                                <button class="btn btn-danger btn-sm"><i
+                                                        class="fas fa-trash"></i></button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -87,8 +88,9 @@
                                             <td>Accountant</td>
                                             <td>Tokyo</td>
                                             <td>
-                                                <button class="btn btn-info"><i class="fas fa-cog"></i></button>
-                                                <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                                                <button class="btn btn-info btn-sm"><i class="fas fa-cog"></i></button>
+                                                <button class="btn btn-danger btn-sm"><i
+                                                        class="fas fa-trash"></i></button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -96,8 +98,9 @@
                                             <td>Junior Technical Author</td>
                                             <td>San Francisco</td>
                                             <td>
-                                                <button class="btn btn-info"><i class="fas fa-cog"></i></button>
-                                                <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                                                <button class="btn btn-info btn-sm"><i class="fas fa-cog"></i></button>
+                                                <button class="btn btn-danger btn-sm"><i
+                                                        class="fas fa-trash"></i></button>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -119,6 +122,39 @@
 
     </div>
     <!-- End of Page Wrapper -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New Student</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="col-form-label">Name:</label>
+                            <input type="text" class="form-control" placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Class:</label>
+                            <input type="text" class="form-control" placeholder="Enter class">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">RFID Code:</label>
+                            <input type="text" class="form-control" placeholder="Enter RFID code">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
