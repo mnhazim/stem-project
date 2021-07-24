@@ -25,7 +25,7 @@
 
 <!-- Nav Item - Charts -->
 <li class="nav-item">
-    <a class="nav-link" href="#">
+    <a class="nav-link" href="student.php">
         <i class="fas fa-fw fa-chart-area"></i>
         <span>Student</span></a>
 </li>
